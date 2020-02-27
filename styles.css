@@ -1,7 +1,7 @@
 #gamecontainer {
 	width:640px;
 	height:480px;
-	background: url(images/virusWar.jpg);
+	background: url(images/splashscreen.png);
 	border: 1px solid black;
 }
 
@@ -33,7 +33,7 @@
 #levelselectscreen input {
 	margin:20px;
 	cursor:pointer;
-	background:url(images/icons/boton.png) no-repeat;
+	background:url(images/icons/level.png) no-repeat;
 	color:yellow;
 	font-size: 20px;
 	width:64px;
