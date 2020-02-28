@@ -33,11 +33,11 @@
 #levelselectscreen input {
 	margin:20px;
 	cursor:pointer;
-	background:url(images/icons/level.png) no-repeat;
+	background:url(images/icons/jelly.png) no-repeat;
 	color:yellow;
 	font-size: 20px;
-	width:64px;
-	height:64px;
+	width:78px;
+	height:78px;
 	border:0;
 }
 

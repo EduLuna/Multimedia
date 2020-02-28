@@ -457,8 +457,47 @@ var levels = {
 			foreground:'desert-foreground',
 			background:'clouds-background',
 			entities:[
+			{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
+			{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+
+			{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"glass", x:520,y:280,angle:90,width:100,height:25},
+			{type:"villain", name:"vaquero",x:520,y:205,calories:590},
+
+			{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"glass", x:620,y:280,angle:90,width:100,height:25},
+			{type:"villain", name:"zombie1", x:620,y:205,calories:420},
+
+			{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"glass", x:720,y:280,angle:90,width:100,height:25},
+			{type:"villain", name:"caballero",x:720,y:205,calories:590},
+
+			{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"glass", x:820,y:280,angle:90,width:100,height:25},
+			{type:"villain", name:"zombie2", x:820,y:205,calories:420},
+
+
+			{type:"hero", name:"jelly2",x:80,y:405},
+			{type:"hero", name:"jelly1",x:140,y:405},
+			]
+		},
+
+		{   // Fourth level
+			foreground:'desert-foreground',
+			background:'clouds-background',
+			entities:[
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
 				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+
+
+				{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:520,y:280,angle:90,width:100,height:25},
+				{type:"villain", name:"vaquero",x:520,y:205,calories:590},
+
+				{type:"block", name:"wood", x:610,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:610,y:280,angle:90,width:100,height:25},
+				{type:"villain", name:"zombie1", x:610,y:205,calories:420},
+
 
 				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
 				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
@@ -470,14 +509,15 @@ var levels = {
 				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
 				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},
 
-				{type:"villain", name:"vaquero",x:715,y:155,calories:590},
-				{type:"villain", name:"zombie1",x:670,y:405,calories:420},
+				{type:"villain", name:"caballero",x:715,y:155,calories:590},
+				{type:"villain", name:"calabaza",x:670,y:405,calories:420},
 				{type:"villain", name:"zombie2",x:765,y:400,calories:150},
 
 				{type:"hero", name:"jelly3",x:30,y:415},
 				{type:"hero", name:"jelly2",x:80,y:405},
 				{type:"hero", name:"jelly1",x:140,y:405},
 			]
+			
 		}
 
 		
@@ -579,6 +619,24 @@ var entities = {
 			friction:0.5,
 			restitution:0.6,
 		},
+		"caballero":{
+			shape:"rectangle",
+			fullHealth:50,
+			width:60,
+			height:80,
+			density:1,
+			friction:0.5,
+			restitution:0.6,
+		},
+		"calabaza":{
+			shape:"rectangle",
+			fullHealth:50,
+			width:60,
+			height:80,
+			density:1,
+			friction:0.5,
+			restitution:0.6,
+		},
 		"jelly1":{
 			shape:"circle",
 			radius:25,
@@ -594,6 +652,13 @@ var entities = {
 			restitution:0.4,
 		},
 		"jelly3":{
+			shape:"circle",
+			radius:25,
+			density:1.5,
+			friction:0.5,
+			restitution:0.4,
+		},
+		"jelly4":{
 			shape:"circle",
 			radius:25,
 			density:1.5,
