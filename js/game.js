@@ -454,7 +454,7 @@ var levels = {
 			]
 		},
 		{   // Third level
-			foreground:'desert-foreground',
+			foreground:'mountain-foreground',
 			background:'clouds-background',
 			entities:[
 			{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
@@ -477,13 +477,13 @@ var levels = {
 			{type:"villain", name:"zombie2", x:820,y:205,calories:420},
 
 
-			{type:"hero", name:"jelly2",x:80,y:405},
+			{type:"hero", name:"jelly3",x:80,y:405},
 			{type:"hero", name:"jelly1",x:140,y:405},
 			]
 		},
 
 		{   // Fourth level
-			foreground:'desert-foreground',
+			foreground:'noche-foreground',
 			background:'clouds-background',
 			entities:[
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
