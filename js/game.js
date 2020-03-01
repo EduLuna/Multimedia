@@ -72,11 +72,11 @@ var game = {
 	startBackgroundMusic:function(){
 		var toggleImage = $("#togglemusic")[0];
 		game.backgroundMusic.play();
-		toggleImage.src="images/icons/sound.png";
+		toggleImage.src="images/icons/soundon.png";
 	},
 	stopBackgroundMusic:function(){
 		var toggleImage = $("#togglemusic")[0];
-		toggleImage.src="images/icons/nosound.png";
+		toggleImage.src="images/icons/soundoff.png";
 		game.backgroundMusic.pause();
 		game.backgroundMusic.currentTime = 0; // Go to the beginning of the song
 	},
@@ -84,10 +84,10 @@ var game = {
 		var toggleImage = $("#togglemusic")[0];
 		if(game.backgroundMusic.paused){
 			game.backgroundMusic.play();
-			toggleImage.src="images/icons/sound.png";
+			toggleImage.src="images/icons/soundon.png";
 		} else {
 			game.backgroundMusic.pause();
-			$("#togglemusic")[0].src="images/icons/nosound.png";
+			$("#togglemusic")[0].src="images/icons/soundoff.png";
 		}
 	},
 	showLevelScreen:function(){
@@ -460,20 +460,20 @@ var levels = {
 			{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
 			{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
 
-			{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"glass", x:520,y:380,angle:90,width:100,height:25},
 			{type:"block", name:"glass", x:520,y:280,angle:90,width:100,height:25},
 			{type:"villain", name:"vaquero",x:520,y:205,calories:590},
 
-			{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
-			{type:"block", name:"glass", x:620,y:280,angle:90,width:100,height:25},
+			{type:"block", name:"glass", x:620,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"wood", x:620,y:280,angle:90,width:100,height:25},
 			{type:"villain", name:"zombie1", x:620,y:205,calories:420},
 
 			{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
-			{type:"block", name:"glass", x:720,y:280,angle:90,width:100,height:25},
+			{type:"block", name:"wood", x:720,y:280,angle:90,width:100,height:25},
 			{type:"villain", name:"caballero",x:720,y:205,calories:590},
 
-			{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
-			{type:"block", name:"glass", x:820,y:280,angle:90,width:100,height:25},
+			{type:"block", name:"glass", x:820,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"wood", x:820,y:280,angle:90,width:100,height:25},
 			{type:"villain", name:"zombie2", x:820,y:205,calories:420},
 
 
@@ -490,11 +490,11 @@ var levels = {
 				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
 
 
-				{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"glass", x:520,y:280,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:520,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:520,y:280,angle:90,width:100,height:25},
 				{type:"villain", name:"vaquero",x:520,y:205,calories:590},
 
-				{type:"block", name:"wood", x:610,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:610,y:380,angle:90,width:100,height:25},
 				{type:"block", name:"glass", x:610,y:280,angle:90,width:100,height:25},
 				{type:"villain", name:"zombie1", x:610,y:205,calories:420},
 

@@ -1,7 +1,7 @@
 #gamecontainer {
 	width:640px;
 	height:480px;
-	background: url(images/splashscreen.png);
+	background: url(images/jellyWars.png);
 	border: 1px solid black;
 }
 
@@ -33,11 +33,11 @@
 #levelselectscreen input {
 	margin:20px;
 	cursor:pointer;
-	background:url(images/icons/jelly.png) no-repeat;
+	background:url(images/icons/lev.png) no-repeat;
 	color:yellow;
 	font-size: 20px;
-	width:78px;
-	height:78px;
+	width:66px;
+	height:66px;
 	border:0;
 }
 
@@ -60,7 +60,7 @@
     height:60px;
     font: 32px Comic Sans MS;
     text-shadow: 0 0 2px #000;
-	color:white;
+	color:rgb(2, 2, 2);
 }
 
 #scorescreen img{
